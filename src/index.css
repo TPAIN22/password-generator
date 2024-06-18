@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --gray : hsl(251, 9%, 53%);
+    --bga :hsl(248, 15%, 11%);
+    --bgb : hsl(247, 11%, 15%);
+    --tx : hsl(252, 11%, 91%);
+    --red:hsl(0, 91%, 63%);
+    --orange : hsl(13, 95%, 66%);
+    --yelow : hsl(42, 91%, 68%);
+    --green : hsl(127, 100%, 82%);
+
+}
+.jetbrains-mono{
+    font-family: "JetBrains Mono", monospace;
+  }
+body{
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bga);
+}
+@media only screen and (min-width:560px) { 
+    .wid{
+        min-width: 524px;
+    }
+}
+
+@media only screen and (max-width:560px) { 
+    .wid{
+        min-width: 284px;
+    }
+}
+
+.am{
+    width:10px;
+    height: 28px;
+    border: 3px solid var(--tx);
+}
+.amw{
+    border:none;
+    background: var(--red);
+}
+.amv{
+    border:none;
+    background: var(--orange);
+}
+
+.amu{
+    border:none;
+    background: var(--yelow);
+}
+.amo{
+    border:none;
+    background: var(--green);
+}
+
+
+input{
+    accent-color: var(--green);
+}
+input:hover , label , button{
+    cursor: pointer;
+}
